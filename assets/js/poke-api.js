@@ -12,7 +12,11 @@ function convertPokeApiDetailToPokemon(pokeDetail) {
     pokemon.types = types
     pokemon.type = type
 
-    pokemon.photo = pokeDetail.sprites.other.dream_world.front_default
+    //Novo com gif
+    pokemon.photo = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/${pokeDetail.id}.gif` 
+
+    //Antigo com imagem
+    //pokemon.photo = pokeDetail.sprites.other.dream_world.front_default
 
     return pokemon
 }
