@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/* RESET */
+*{
+    font-size: 62.5%; /* Transforma 1rem em 10px */
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #f6f8fc;
+    --white-color: #fff;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.content{
+    font-size: 1.6rem;
+    width: 100vw;
+    height: 100vh;
+    padding: 1.6rem;
+    background-color: var(--white-color);
+}
+
+@media screen and (min-width: 992px) {
+    .content {
+        max-width: 992px;
+        height: auto;
+        margin: 1.6rem auto;
+        border-radius: 1.6rem;
+    }
+}
+
